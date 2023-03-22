@@ -29,3 +29,8 @@ ORDER BY 1;
 SELECT  ProductID , OrderQty , SUM(LineTotal) OVER(PARTITION BY ProductID , OrderQty)
 FROM Sales.SalesOrderDetail
 ORDER BY 1;  --select distinct here is much more beautiful and useful
+
+/*
+In summary, GROUP BY is used to perform aggregation on data and returns a single row for each group, 
+while PARTITION BY is used to divide a result set into partitions and assigns a rank or row number to each row within each partition
+*/
