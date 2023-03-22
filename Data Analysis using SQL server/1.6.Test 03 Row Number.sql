@@ -34,7 +34,7 @@ ON Production.ProductSubcategory.ProductCategoryID=Production.ProductCategory.Pr
 --Exercise 3
 /*
 Enhance your query from Exercise 2 by adding a derived column called
-"Category Price Rank" that ranks all products by ListPrice ñ within each category - in descending order. 
+"Category Price Rank" that ranks all products by ListPrice ‚Äì within each category - in descending order. 
 In other words, every product within a given category should be ranked 
 relative to other products in the same category.
 */
@@ -56,9 +56,9 @@ ON Production.ProductSubcategory.ProductCategoryID=Production.ProductCategory.Pr
 --Exercise 4
 /*
 Enhance your query from Exercise 3 by adding a derived column called
-"Top 5 Price In Category" that returns the string ìYesî 
+"Top 5 Price In Category" that returns the string ‚ÄúYes‚Äù 
 if a product has one of the top 5 list prices in its product category, 
-and ìNoî if it does not. 
+and ‚ÄúNo‚Äù if it does not. 
 You can try incorporating your logic from Exercise 3 into a CASE statement to make this work.
 */
 
