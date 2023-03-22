@@ -1,14 +1,14 @@
 --Exercise 1
 /*
 Create a query with the following columns:
-“Name” from the Production.Product table, which can be alised as “ProductName”
-“ListPrice” from the Production.Product table
-“Name” from the Production. ProductSubcategory table, which can be alised as “ProductSubcategory”*
-“Name” from the Production.ProductCategory table, which can be alised as “ProductCategory”**
+â€œNameâ€ from the Production.Product table, which can be alised as â€œProductNameâ€
+â€œListPriceâ€ from the Production.Product table
+â€œNameâ€ from the Production. ProductSubcategory table, which can be alised as â€œProductSubcategoryâ€*
+â€œNameâ€ from the Production.ProductCategory table, which can be alised as â€œProductCategoryâ€**
 
 
-*Join Production.ProductSubcategory to Production.Product on “ProductSubcategoryID”
-**Join Production.ProductCategory to ProductSubcategory on “Production.ProductCategory”
+*Join Production.ProductSubcategory to Production.Product on â€œProductSubcategoryIDâ€
+**Join Production.ProductCategory to ProductSubcategory on â€œProduction.ProductCategoryâ€
 All the tables can be inner joined, and you do not need to apply any criteria.
 */
 
@@ -67,7 +67,7 @@ ON Production.ProductSubcategory.ProductCategoryID=Production.ProductCategory.Pr
 /*
 Enhance your query from Exercise 3 by adding a derived column called
 "ProductVsCategoryDelta" that returns the result of the following calculation:
-A product's list price, MINUS the average ListPrice for that product’s category.
+A product's list price, MINUS the average ListPrice for that productâ€™s category.
 */
 
 SELECT Production.Product.Name as Product_Name , Production.Product.ListPrice,
