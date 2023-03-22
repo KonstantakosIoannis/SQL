@@ -1,0 +1,8 @@
+Data analysis using Microsoft SQL server .
+Data Set : AdventureWorks2019
+Downlonad it here :https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
+Version OLTP AdventureWorkds2019.bak
+It is a in a BAK (backup) format and you can easily restore it using microsoft studio
+
+Here i do an extended data analysis of this set using advanced sql concepts like(CTE's , PIVOT tables , Stored Procedures , User Functions and many more)
+There are many exercises with solutions a lot of examples and comments explaining everything.
