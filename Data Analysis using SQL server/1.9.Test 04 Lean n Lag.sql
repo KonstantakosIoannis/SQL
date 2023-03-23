@@ -1,10 +1,10 @@
 --Exercise 1
 /*
 Create a query with the following columns:
-ìPurchaseOrderIDî from the Purchasing.PurchaseOrderHeader table
-ìOrderDateî from the Purchasing.PurchaseOrderHeader table
-ìTotalDueî from the Purchasing.PurchaseOrderHeader table
-ìNameî from the Purchasing.Vendor table, which can be aliased as ìVendorNameî*
+‚ÄúPurchaseOrderID‚Äù from the Purchasing.PurchaseOrderHeader table
+‚ÄúOrderDate‚Äù from the Purchasing.PurchaseOrderHeader table
+‚ÄúTotalDue‚Äù from the Purchasing.PurchaseOrderHeader table
+‚ÄúName‚Äù from the Purchasing.Vendor table, which can be aliased as ‚ÄúVendorName‚Äù*
 *Join Purchasing.Vendor to Purchasing.PurchaseOrderHeader on BusinessEntityID = VendorID
 
 Apply the following criteria to the query:
@@ -27,9 +27,9 @@ WHERE YEAR(OrderDate)>=2013 AND TotalDue>500;
 --Exercise 2
 /*
 Modify your query from Exercise 1 by adding a derived column called "PrevOrderFromVendorAmt", 
-that returns the ìpreviousî TotalDue value (relative to the current row) 
+that returns the ‚Äúprevious‚Äù TotalDue value (relative to the current row) 
 within the group of all orders with the same vendor ID. 
-We are defining ìpreviousî based on order date.
+We are defining ‚Äúprevious‚Äù based on order date.
 */
 
 SELECT Purchasing.PurchaseOrderHeader.PurchaseOrderID , Purchasing.PurchaseOrderHeader.OrderDate , 
@@ -46,9 +46,9 @@ ORDER BY VendorId , OrderDate;--this line changes nothing
 --Exercise 3
 /*
 Modify your query from Exercise 2 by adding a derived column called
-"NextOrderByEmployeeVendor", that returns the ìnextî vendor name (the ìnameî field from Purchasing.Vendor) 
+"NextOrderByEmployeeVendor", that returns the ‚Äúnext‚Äù vendor name (the ‚Äúname‚Äù field from Purchasing.Vendor) 
 within the group of all orders that have the same EmployeeID value in Purchasing.PurchaseOrderHeader. 
-Similar to the last exercise, we are defining ìnextî based on order date.
+Similar to the last exercise, we are defining ‚Äúnext‚Äù based on order date.
 */
 
 SELECT Purchasing.PurchaseOrderHeader.PurchaseOrderID , Purchasing.PurchaseOrderHeader.OrderDate , 
@@ -65,7 +65,7 @@ ORDER BY EmployeeId , OrderDate;
 /*
 Modify your query from Exercise 3 by adding a derived column called "Next2OrderByEmployeeVendor" 
 that returns, within the group of all orders that have the same EmployeeID, 
-the vendor name offset TWO orders into the ìfutureî relative to the order in the current row. 
+the vendor name offset TWO orders into the ‚Äúfuture‚Äù relative to the order in the current row. 
 The code should be very similar to Exercise 3, 
 but with an extra argument passed to the Window Function used.
 */
